@@ -86,8 +86,26 @@ select first_name, last_name, hire_date
 from employees
 where hire_date between '1986-01-01' and '1986-12-31';
 
---View the table
+-- View the table
 select * from unique_year_hires;
+
+-- 3. List the manager of each department with the following information: department number, 
+--    department name, the manager's employee number, last name, first name.
+create view manager as
+select m.dept_no, m.emp_no, d.dept_name, e.last_name, e.first_name
+from dept_manager as m
+left join employees e
+on m.emp_no = e.emp_no
+left join departments as d
+on m.dept_no = d.dept_no;
+
+-- View the table
+select * from manager;
+
+-- 4. List the department of each employee with the following information: employee number, 
+--    last name, first name, and department name.
+
+
 
 
 
