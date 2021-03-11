@@ -146,5 +146,17 @@ where dept_name = 'Sales' or dept_name = 'Development';
 -- View the table
 select * from sales_developement;
 
+-- 8. In descending order, list the frequency count of employee last names, i.e., 
+--    how many employees share each last name.
+create view frequency_count as
+select last_name, count(last_name) as "last_count"
+from employees
+group by last_name
+order by "last_count" desc;
+
+-- View the table
+select * from frequency_count;
+
+
 
 
