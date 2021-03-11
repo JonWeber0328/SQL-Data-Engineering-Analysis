@@ -104,8 +104,16 @@ select * from manager;
 
 -- 4. List the department of each employee with the following information: employee number, 
 --    last name, first name, and department name.
+create view employee_dept as
+select e.emp_no, e.last_name, e.first_name, d.dept_name
+from employees as e
+left join dept_emp p
+on e.emp_no = p.emp_no
+left join departments d
+on p.dept_no = d.dept_no;
 
-
+-- View the table
+select * from employee_dept;
 
 
 
