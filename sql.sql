@@ -20,7 +20,7 @@ CREATE TABLE "dept_emp" (
 
 CREATE TABLE "dept_manager" (
     "dept_no" VARCHAR   NOT NULL,
-    "emp_no" INT   NOT NULL,
+    "emp_no" INTEGER   NOT NULL,
     CONSTRAINT "pk_dept_manager" PRIMARY KEY (
         "emp_no"
      )
@@ -29,11 +29,11 @@ CREATE TABLE "dept_manager" (
 CREATE TABLE "employees" (
     "emp_no" INTEGER   NOT NULL,
     "emp_title_id" VARCHAR   NOT NULL,
-    "birth_date" VARCHAR   NOT NULL,
+    "birth_date" DATE   NOT NULL,
     "first_name" VARCHAR   NOT NULL,
     "last_name" VARCHAR   NOT NULL,
     "sex" VARCHAR   NOT NULL,
-    "hire_date" VARCHAR   NOT NULL,
+    "hire_date" DATE   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
@@ -81,6 +81,14 @@ on e.emp_no = s.emp_no;
 select * from employee_details;
 
 -- 2. List first name, last name, and hire date for employees who were hired in 1986.
+create view unique_year_hires as
+select first_name, last_name, hire_date
+from employees
+where hire_date between '1986-01-01' and '1986-12-31';
+
+--View the table
+select * from unique_year_hires;
+
 
 
 
