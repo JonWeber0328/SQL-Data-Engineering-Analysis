@@ -126,6 +126,13 @@ and last_name like 'B%';
 -- View the table
 select * from hercules;
 
+-- 6. List all employees in the Sales department, including their employee number, 
+--    last name, first name, and department name.
+create view employee_sales_dept as
+select e.emp_no, e.last_name, e.first_name, e.dept_name
+from employee_dept as e
+where dept_name = 'Sales'
 
-
+-- View the table
+select * from employee_sales_dept;
 
