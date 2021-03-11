@@ -70,4 +70,19 @@ REFERENCES "salaries" ("emp_no");
 ALTER TABLE "employees" ADD CONSTRAINT "fk_employees_emp_title_id" FOREIGN KEY("emp_title_id")
 REFERENCES "titles" ("title_id");
 
-select * from departments;
+-- 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
+create view employee_details as
+select e.emp_no, e.last_name, e.first_name, e.sex, s.salary
+from employees as e
+left join salaries s
+on e.emp_no = s.emp_no;
+
+-- View the table
+select * from employee_details;
+
+-- 2. List first name, last name, and hire date for employees who were hired in 1986.
+
+
+
+
+
