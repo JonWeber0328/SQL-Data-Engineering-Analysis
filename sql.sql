@@ -115,7 +115,16 @@ on p.dept_no = d.dept_no;
 -- View the table
 select * from employee_dept;
 
+-- 5. List first name, last name, and sex for employees whose first name is "Hercules" 
+--    and last names begin with "B."
+create view hercules as
+select e.first_name, e.last_name, e.sex
+from employees as e
+where first_name = 'Hercules'
+and last_name like 'B%';
 
+-- View the table
+select * from hercules;
 
 
 
