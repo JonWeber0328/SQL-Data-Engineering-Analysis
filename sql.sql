@@ -136,3 +136,15 @@ where dept_name = 'Sales'
 -- View the table
 select * from employee_sales_dept;
 
+-- 7. List all employees in the Sales and Development departments, including their 
+--    employee number, last name, first name, and department name.
+create view sales_developement as
+select e.emp_no, e.last_name, e.first_name, e.dept_name
+from employee_dept as e
+where dept_name = 'Sales' or dept_name = 'Development';
+
+-- View the table
+select * from sales_developement;
+
+
+
