@@ -173,7 +173,7 @@ Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool li
 Once you have a complete database, do the following:
   * *See the Project Visuals below*
 
-1. [List](#Screenshot1 "Goto [Screenshot1]") the following details of each employee: employee number, last name, first name, sex, and salary.
+1. [List](#Screenshot1 "Goto Screenshot1") the following details of each employee: employee number, last name, first name, sex, and salary.
 
 2. List first name, last name, and hire date for employees who were hired in 1986.
 
