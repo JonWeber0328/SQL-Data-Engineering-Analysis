@@ -1,9 +1,7 @@
-# sql-challenge
-This is a repo for the first SQL homework challenge.
+# SQL Data Engineering & Analysis
+This repo creates a SQL database from six .csv files (data engineering) then answers questions about the data (data analysis) using: SQL, Python (SQLAlchemy, pandas, NumPy, and Matplotlib), pgAdmin 4, and PostgreSQL.
 
-# SQL Homework - Employee Database: A Mystery in Two Parts
-
-![sql.png](sql.png)
+![sql.png](Images/sql.png)
 
 ## Background
 
