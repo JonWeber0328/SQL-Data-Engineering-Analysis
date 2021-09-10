@@ -173,21 +173,21 @@ Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool li
 Once you have a complete database, do the following:
   * *See the Project Visuals below*
 
-1. [List](#List1 "Goto **List1**") the following details of each employee: employee number, last name, first name, sex, and salary.
+1. [List](#employee_details "Goto employee_details") the following details of each employee: employee number, last name, first name, sex, and salary.
 
-2. List first name, last name, and hire date for employees who were hired in 1986.
+2. [List](#unique_year_hires "Goto unique_year_hires") first name, last name, and hire date for employees who were hired in 1986.
 
-3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+3. [List](#manager "Goto manager") the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 
-4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+4. [List](#employee_dept "Goto employee_dept") the department of each employee with the following information: employee number, last name, first name, and department name.
 
-5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+5. [List](#hercules "Goto hercules") first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+6. [List](#employee_sales_dept "Goto employee_sales_dept") all employees in the Sales department, including their employee number, last name, first name, and department name.
 
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+7. [List](#sales_department "Goto sales_department") all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+8. In [decending order](#frequency_count "Goto frequency_count"), list the frequency count of employee last names, i.e., how many employees share each last name.
 
 
 **Open Jupyter Notebook**
@@ -214,21 +214,21 @@ jupyter notebook
 
 ## **Project Visuals**
 #
-# **List1**
+### employee_details
 ![Screenshot1](Images/Screenshot1.png)
-# **2**
+### unique_year_hires
 ![Screenshot2](Images/Screenshot2.png)
-
+### manager
 ![Screenshot3](Images/Screenshot3.png)
-
+### employee_dept
 ![Screenshot4](Images/Screenshot4.png)
-
+### hercules
 ![Screenshot5](Images/Screenshot5.png)
-
+### employee_sales_dept
 ![Screenshot6](Images/Screenshot6.png)
-
+### sales_department
 ![Screenshot7](Images/Screenshot7.png)
-
+### frequency_count
 ![Screenshot8](Images/Screenshot8.png)
 
 
