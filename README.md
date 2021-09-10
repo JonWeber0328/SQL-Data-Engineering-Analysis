@@ -230,7 +230,7 @@ jupyter notebook
 ![Screenshot7](Images/Screenshot7.png)
 ### frequency_count
 ![Screenshot8](Images/Screenshot8.png)
-
-
+### Jupyter Notebook Image
+![Screenshot9](Images/Screenshot9.png)
 
 
